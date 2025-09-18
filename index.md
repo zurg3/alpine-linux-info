@@ -115,9 +115,9 @@ y
 ```
 Скачать скрипт для настройки системы
 ```
-# wget zurg3.github.io/alpine-linux-info/alpine_linux_setting.sh
+# wget zurg3.github.io/alpine-linux-info/alpis.sh
 ```
 Запустить скрипт
 ```
-# bash alpine_linux_setting.sh
+# bash alpis.sh
 ```

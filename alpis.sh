@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Alpine Linux Post-Installation Script
+
 # config
 mirror_branch="v3.22"
 locale="ru_RU.UTF-8"
