@@ -8,7 +8,8 @@ locale="ru_RU.UTF-8"
 
 # user and password settings
 read -p "Username: " username
-read -p "$username password: " user_password
+read -sp "$username password: " user_password
+echo
 
 # mirror
 {
@@ -34,8 +35,10 @@ useradd -m -g users -G wheel -s /bin/bash $username
 echo -e "\n%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
 # setup locale
-echo "LANG=$locale" > /etc/profile.d/00locale.sh
-echo "LC_ALL=$locale" >> /etc/profile.d/00locale.sh
+{
+  echo "LANG=$locale"
+  echo "LC_ALL=$locale"
+} > /etc/profile.d/00locale.sh
 
 # setup cyrillic font for console
 echo 'consolefont="cyr-sun16.psfu.gz"' > /etc/conf.d/consolefont
