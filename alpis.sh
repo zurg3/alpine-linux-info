@@ -3,7 +3,7 @@
 # Alpine Linux Post-Installation Script
 
 # config
-mirror_branch="v3.23"
+mirror_branch="v3.24"
 locale="ru_RU.UTF-8"
 
 # user and password settings
